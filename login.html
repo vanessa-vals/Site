@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site Responsivo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Remove margens fixas quebradas */
+        .offset-desktop {
+            margin-left: 0;
+        }
+
+        @media (min-width: 992px) {
+            .offset-desktop {
+                margin-left: 0px;
+            }
+        }
+
+
+        .dropdown-menu .dropdown-item {
+            color: white !important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+     <!-- Logo centralizada -->
+    <div class="d-flex justify-content-center my-3">
+        <img src="imagens/logo_3.1.jpeg" alt="" class="rounded-circle" style="width: 150px; height:150px;">
+    </div>
+
+
+
+    <!-- MENU -->
+    <!-- MENU CORRIGIDO -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #6E5F5D;">
+        <div class="container">
+
+            <a class="navbar-brand text-white" href="#"></a>
+
+            <!-- Botão mobile -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Itens do menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <!-- LINKS CENTRAIS -->
+                <ul class="navbar-nav me-auto ms-auto gap-lg-4 text-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="index.html">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="quem_somos.html">Quem somos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="planos.html">Planos</a>
+                    </li>
+
+                    <!-- DROPDOWN -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                            Conteúdos
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-dark text-center" style="background-color: #6E5F5D;">
+                            <li><a class="dropdown-item" href="#">Moda sem gênero</a></li>
+                            <li><a class="dropdown-item" href="celebridades.html">Celebridades</a></li>
+                            <li><a class="dropdown-item" href="perfil.html">Área do Usuário</a></li>
+                            <li><a class="dropdown-item" href="maquiagem.html">Maquiagem</a></li>
+                            <li><a class="dropdown-item" href="cores1.html">Cores</a></li>
+                            <li><a class="dropdown-item" href="#">Looks em alta</a></li>
+                            <li><a class="dropdown-item" href="corpos.html">Corpos diversos</a></li>
+                            <li><a class="dropdown-item" href="idades.html">Idades</a></li>
+                            <li><a class="dropdown-item" href="brecho1.html">Brechó</a></li>
+                            <li><a class="dropdown-item" href="modabrasileira1.html">Cultura brasileira</a></li>
+                            <li><a class="dropdown-item" href="formulario.html">IA</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- ÍCONES (À DIREITA) -->
+                <ul class="navbar-nav ms-lg-3 flex-row gap-3 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">
+                            <img src="imagens/icons8-usuário-de-gênero-neutro-50.png" class="rounded-circle"
+                                style="width: 30px; height: 30px;">
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">
+                            <img src="imagens/icons8-cadastro-50.png" class="rounded-circle"
+                                style="width: 30px; height: 30px;" alt="Cadastra-se">
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <main>
+
+        <!-- BLOCO 1 — Imagem + texto -->
+        <!-- BLOCO 1 — Imagem + texto -->
+        <section class="container my-5">
+            <div class="row g-4 align-items-start">
+
+                <div class="col-12 col-lg-4 offset-desktop">
+                    <div class="card p-4" style="background-color: #6E5F5D;">
+                        <img src="" alt="">
+                        <h3 class="card-title"
+                            style="margin-bottom: 0px; margin-top: 100px;color: white; text-align: center; height: 80px;">
+                            Monta Look
+                        </h3>
+                        <h4 class="card-title"
+                            style="margin-bottom: 10px; color: white; text-align: center; height: 150px;">Bem Vindo
+                        </h4>
+                        <p style="color: white; text-align: center; margin-bottom: 50px; height: 125px;">Acesse sua
+                            conta para obter informações completas,
+                            acompanhar seu progresso e aproveitar todos os recursos disponíveis com total segurança e
+                            praticidade.</p>
+
+
+                        <div class="d-flex gap-3 justify-content-center">
+                            <a href="cadastro.html" class="w-100 d-flex justify-content-center" style="text-decoration: none;">
+                                <button type="submit" class="btn btn-primary w-50 py-3 "
+                                    style="background-color:#6E5F5D; color: white; border-color: white; align-items: center; margin-bottom: 100px;">
+                                    Cadastra-se
+                                </button>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- BLOCO LOGIN -->
+
+                <div class="col-12 col-lg-6 offset-desktop">
+                    <div class="card p-4">
+                        <h5 class="card-title" style="margin-bottom: 60px; margin-top: 100px;">Login</h5>
+
+                        <form id="formLogin">
+                            <div class="mb-3">
+                                <label class="form-label">Usuário</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="senha">
+                            </div>
+
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalSenha" style="color: black;">
+                                <p>Esqueci a senha.</p>
+                            </a>
+
+                            <!-- MODAL REDEFINIR SENHA -->
+                            <div class="modal fade" id="modalSenha" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header" style="background-color: #6E5F5D; color: white;">
+                                            <h5 class="modal-title">Redefinir senha</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>Informe seu e-mail para redefinir sua senha.</p>
+
+                                            <input type="email" class="form-control mb-3" id="emailRecuperacao"
+                                                placeholder="Digite seu e-mail">
+
+                                            <div id="msgRecuperacao" class="text-success text-center"></div>
+                                        </div>
+
+                                        <div class="modal-footer" style="background-color: #6E5F5D; color: white;">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                                style="background-color: white; color: #6E5F5D;">
+                                                Cancelar
+                                            </button>
+                                            <button type="button" class="btn btn-primary" onclick="redefinirSenha()"
+                                                style="background-color: white ; color:#6E5F5D;">
+                                                Enviar
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <script>
+                                function redefinirSenha() {
+                                    const email = document.getElementById("emailRecuperacao").value
+                                    const msg = document.getElementById("msgRecuperacao")
+
+                                    if (email === "") {
+                                        msg.classList.remove("text-success")
+                                        msg.classList.add("text-danger")
+                                        msg.textContent = "Por favor, informe um e-mail válido."
+                                        return
+                                    }
+
+                                    // Simulação de envio
+                                    msg.classList.remove("text-danger")
+                                    msg.classList.add("text-success")
+                                    msg.textContent = "Enviado com sucesso."
+                                }
+                            </script>
+
+
+
+
+
+
+
+                            <button type="submit" class="btn btn-primary w-100"
+                                style="margin-bottom: 0px; margin-top: 80px; background-color: #6E5F5D; color: white;">
+                                Entrar
+                            </button>
+
+                            <div id="mensagem" class="text-danger text-center mt-3" style="padding-bottom: 145px;">
+                            </div>
+
+                        </form>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const form = document.getElementById("formLogin")
+                const mensagem = document.getElementById("mensagem")
+
+                form.addEventListener("submit", function (event) {
+                    event.preventDefault()
+
+                    const email = document.getElementById("email").value
+                    const senha = document.getElementById("senha").value
+
+                    if (email === "israel@gmail.com" && senha === "123456") {
+                        // LOGIN OK → redireciona
+                        window.location.href = "perfil.html"
+                    } else {
+                        // LOGIN INVÁLIDO
+                        mensagem.textContent = "E-mail ou senha inválidos."
+                    }
+                })
+            })
+        </script>
+
+
+
+
+    </main>
+
+
+
+
+    <!-- RODAPÉ -->
+    <footer style="background-color: #6E5F5D; color: white;" class="text-center p-4 mt-5">
+        <section class="container my-4">
+            <div class="row g-1" style="margin-top: 100px;">
+
+                <div class="col-12 col-md-6">
+                    <h5>Contatos</h5>
+                    <p>      WhatsApp (Atendimento): +55 11 90000-0000 <br>
+                               Email Oficial: contato@montalooks.com </p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <h5>Redes</h5>
+                    <p>      Insta: instagram.com/montalooks <br>
+                               TikTok: tiktok.com/montalooks <br>
+                        Twitter/X: usemontalooks</p>
+                </div>
+
+
+
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

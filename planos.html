@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site Responsivo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .dropdown-menu .dropdown-item {
+            color: white !important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Logo centralizada -->
+    <div class="d-flex justify-content-center my-3">
+        <img src="imagens/Design sem nome (9).png" alt="" class="rounded-circle"
+            style="width: 100px; height:100px;">
+    </div>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary text-white">
+        <div class="container" style="background-color: #6E5F5D;">
+            <a class="navbar-brand text-white" href="#">
+                <!-- SE QUISER COLOCAR LOGO, ADICIONE AQUI -->
+            </a>
+
+            <!-- Botão mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Itens do menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <!-- LINKS CENTRAIS -->
+                <ul class="navbar-nav me-auto ms-auto gap-lg-4 text-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="index.html">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="quem_somos.html">Quem somos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="planos.html">Planos</a>
+                    </li>
+
+                    <!-- DROPDOWN -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                            Conteúdos
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-dark text-center" style="background-color: #6E5F5D;">
+                            <li><a class="dropdown-item" href="#">Moda sem gênero</a></li>
+                            <li><a class="dropdown-item" href="celebridades.html">Celebridades</a></li>
+
+                            
+
+                            <li><a class="dropdown-item" href="perfil.html">Área do Usuário</a></li>
+                            <li><a class="dropdown-item" href="#">Maquiagem</a></li>
+                            <li><a class="dropdown-item" href="#">Cores</a></li>
+                            <li><a class="dropdown-item" href="#">Looks em alta</a></li>
+                            <li><a class="dropdown-item" href="#">Corpos diversos</a></li>
+                            <li><a class="dropdown-item" href="#">Idades</a></li>
+                            <li><a class="dropdown-item" href="#">Brechó</a></li>
+                            <li><a class="dropdown-item" href="#">Cultura brasileira</a></li>
+                            <li><a class="dropdown-item" href="#">Estilos Diferenciados</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- ÍCONES (À DIREITA) -->
+                <ul class="navbar-nav ms-lg-3 flex-row gap-3 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">
+                            <img src="imagens/icons8-usuário-de-gênero-neutro-50.png" class="rounded-circle"
+                                style="width: 30px; height: 30px;">
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">
+                            <img src="imagens/icons8-cadastro-50.png" class="rounded-circle"
+                                style="width: 30px; height: 30px;" alt="Cadastra-se">
+                        </a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <main>
+
+
+        <!-- Imagem Black--------- -->
+        <section class="container my-4">
+            <div class="row g-1" style="margin-top: 10px;">
+
+                <div class="col-12 col-md-12">
+                    <img src="imagens/Captura de tela_30-11-2025_232337_127.0.0.1.jpeg" class="img-fluid rounded shadow"
+                        style="height: 500px; width: 95%; object-fit: cover;">
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+        <!-- PRIMEIRO BLOCO DE FOTOS -->
+        <section class="container my-4">
+            <div class="row g-1" style="margin-top: 10px;">
+
+                <div class="col-12 col-lg-12">
+                    <div class="card p-3">
+                        <h5 class="card-title" style="text-align: center;">Título</h5>
+                        <p class="card-text">
+                            Este é um texto que acompanha a imagem ao lado.
+                            Em telas pequenas, a imagem fica em cima; em telas grandes, fica ao lado.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SEGUNDO BLOCO DE CARDS -->
+        <section class="container my-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" style="margin-top: 100px;">
+
+                <div class="col" style="height: 600px; margin-top: 100px;">
+                    <div class="card h-100">
+                        <img src="imagens/Captura de tela_30-11-2025_232337_127.0.0.1.jpeg"
+                            class="card-img-top img-fluid" style="height: 70%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Título</h5>
+                            <p class="card-text">Descrição do card.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="imagens/Captura de tela_30-11-2025_232337_127.0.0.1.jpeg"
+                            class="card-img-top img-fluid" style="height: 70%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Título</h5>
+                            <p class="card-text">Texto do card.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col" style="height: 600px; margin-top: 100px;">
+                    <div class="card h-100">
+                        <img src="imagens/Captura de tela_30-11-2025_232337_127.0.0.1.jpeg"
+                            class="card-img-top img-fluid" style="height: 70%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Outro Card</h5>
+                            <p class="card-text">Mais conteúdo do card.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <!-- Conteudo -->
+        <section class="container my-5">
+            <div class="row align-items-center g-4" style="margin-top: 100px;">
+
+
+
+                <div class="col-12 col-lg-12">
+                    <div class="card p-3">
+                        <h5 class="card-title" style="text-align: center;">Título</h5>
+                        <p class="card-text">
+                            Ad expedita tempora incidunt? Minus provident ratione quae omnis sapiente dolores porro
+                            incidunt ipsum natus architecto laboriosam pariatur recusandae, culpa suscipit tenetur?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure at autem unde maiores,
+                            doloremque dolorem mollitia reiciendis ipsa provident ratione natus dicta ab, aliquid
+                            aspernatur nobis quasi hic nam eligendi!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BLOCO 1 — Imagem + texto -->
+        <section class="container my-5">
+            <div class="row align-items-center g-4" style="margin-top: 100px;">
+
+
+
+                <div class="col-12 col-lg-12">
+                    <div class="card p-3">
+                        <h5 class="card-title" style="text-align: center;">Título</h5>
+                        <p class="card-text">
+                            Ad expedita tempora incidunt? Minus provident ratione quae omnis sapiente dolores porro
+                            incidunt ipsum natus architecto laboriosam pariatur recusandae, culpa suscipit tenetur?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure at autem unde maiores,
+                            doloremque dolorem mollitia reiciendis ipsa provident ratione natus dicta ab, aliquid
+                            aspernatur nobis quasi hic nam eligendi!
+                        </p>
+
+                        <div class="text-center">
+                            <button style="width: 200px; ">Comprar Planos</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="bg-info text-center p-4 mt-5">
+        <section class="container my-4">
+            <div class="row g-1" style="margin-top: 100px;">
+
+                <div class="col-12 col-md-4">
+
+                    <h5>Titulo1</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora aliquid neque quod cum est
+                        reiciendis excepturi delectus placeat et non iusto, mollitia error veniam enim culpa quos! Esse,
+                        voluptate. Corrupti?</p>
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <h5>Titulo1</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora aliquid neque quod cum est
+                        reiciendis excepturi delectus placeat et non iusto, mollitia error veniam enim culpa quos! Esse,
+                        voluptate. Corrupti?</p>
+                </div>
+
+
+
+                <div class="col-12 col-md-4">
+
+                    <h5>Titulo1</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora aliquid neque quod cum est
+                        reiciendis excepturi delectus placeat et non iusto, mollitia error veniam enim culpa quos! Esse,
+                        voluptate. Corrupti?</p>
+                </div>
+
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

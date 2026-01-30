@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site Responsivo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Remove margens fixas quebradas */
+        .offset-desktop {
+            margin-left: 0;
+        }
+
+        @media (min-width: 992px) {
+            .offset-desktop {
+                margin-left: 0px;
+            }
+        }
+
+        
+        .dropdown-menu .dropdown-item {
+            color: white !important;
+        }
+    </style>
+    
+
+</head>
+
+<body>
+
+    <!-- Logo centralizada -->
+    <div class="d-flex justify-content-center my-3">
+        <img src="imagens/logo_3.1.jpeg" alt="" class="rounded-circle" style="width: 150px; height:150px;">
+    </div>
+
+
+
+    <!-- MENU -->
+    <!-- MENU CORRIGIDO -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #6E5F5D;">
+        <div class="container">
+
+            <a class="navbar-brand text-white" href="#"></a>
+
+            <!-- Botão mobile -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Itens do menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <!-- LINKS CENTRAIS -->
+                <ul class="navbar-nav me-auto ms-auto gap-lg-4 text-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="index.html">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="quem_somos.html">Quem somos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="planos.html">Planos</a>
+                    </li>
+
+                    <!-- DROPDOWN -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                            Conteúdos
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-dark text-center" style="background-color: #6E5F5D;">
+                            <li><a class="dropdown-item" href="#">Moda sem gênero</a></li>
+                            <li><a class="dropdown-item" href="celebridades.html">Celebridades</a></li>
+                            <li><a class="dropdown-item" href="perfil.html">Área do Usuário</a></li>
+                            <li><a class="dropdown-item" href="maquiagem.html">Maquiagem</a></li>
+                            <li><a class="dropdown-item" href="cores1.html">Cores</a></li>
+                            <li><a class="dropdown-item" href="#">Looks em alta</a></li>
+                            <li><a class="dropdown-item" href="corpos.html">Corpos diversos</a></li>
+                            <li><a class="dropdown-item" href="idades.html">Idades</a></li>
+                            <li><a class="dropdown-item" href="brecho1.html">Brechó</a></li>
+                            <li><a class="dropdown-item" href="modabrasileira1.html">Cultura brasileira</a></li>
+                            <li><a class="dropdown-item" href="formulario.html">IA</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- ÍCONES (À DIREITA) -->
+                <ul class="navbar-nav ms-lg-3 flex-row gap-3 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">
+                            <img src="imagens/icons8-usuário-de-gênero-neutro-50.png" class="rounded-circle"
+                                style="width: 30px; height: 30px;">
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">
+                            <img src="imagens/icons8-cadastro-50.png" class="rounded-circle"
+                                style="width: 30px; height: 30px;" alt="Cadastra-se">
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <main>
+
+        <!-- BLOCO 1 — Imagem + texto -->
+        <section class="container my-5">
+            <div class="d-flex justify-content-center">
+
+
+
+                <!-- BLOCO LOGIN -->
+<div class="col-12 col-md-8 col-lg-6 mx-auto">
+    <div class="card p-4 text-center">
+
+        <!-- FOTO DO USUÁRIO -->
+        <div class="mx-auto mb-3" style="width: 150px; height: 150px;">
+            <img src="imagens/Captura de tela_30-11-2025_232337_127.0.0.1.jpeg"
+                class="img-fluid rounded-circle w-100 h-100 object-fit-cover">
+        </div>
+
+        <h5 class="card-title mb-2">Nome do Usuário</h5>
+        <p class="mb-4">Bem-vindo</p>
+
+        <!-- FORMULÁRIO -->
+        <form class="px-2 px-md-4">
+
+            <div class="mb-3">
+                <label class="form-label">Nome</label>
+                <input type="text" class="form-control w-100" id="email">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Senha</label>
+                <input type="password" class="form-control w-100" id="senha">
+            </div>
+
+            <div class="form-check mb-4">
+                <input type="checkbox" class="form-check-input" id="confirmar">
+                <label class="form-check-label" for="confirmar">Confirmar</label>
+            </div>
+
+            <!-- BOTÕES -->
+            <div class="d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center">
+                <button type="submit" class="btn btn-primary"
+                    style="background-color: aqua; width: 150px; height: 50px;">
+                    Mudar Dados
+                </button>
+
+                <button type="reset" class="btn btn-secondary"
+                    style="background-color: aqua; width: 150px; height: 50px;">
+                    Sair
+                </button>
+            </div>
+
+            <div class="text-center mt-3">
+                <a href="#">Esqueci a senha</a>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+    <!-- RODAPÉ -->
+    <footer class="bg-info text-center p-4 mt-5">
+        <section class="container my-4">
+            <div class="row g-1" style="margin-top: 100px;">
+
+                <div class="col-12 col-md-4">
+
+                    <h5>Titulo1</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora aliquid neque quod cum est
+                        reiciendis excepturi delectus placeat et non iusto, mollitia error veniam enim culpa quos! Esse,
+                        voluptate. Corrupti?</p>
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <h5>Titulo1</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora aliquid neque quod cum est
+                        reiciendis excepturi delectus placeat et non iusto, mollitia error veniam enim culpa quos! Esse,
+                        voluptate. Corrupti?</p>
+                </div>
+
+
+
+                <div class="col-12 col-md-4">
+
+                    <h5>Titulo1</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora aliquid neque quod cum est
+                        reiciendis excepturi delectus placeat et non iusto, mollitia error veniam enim culpa quos! Esse,
+                        voluptate. Corrupti?</p>
+                </div>
+
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
